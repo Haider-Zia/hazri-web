@@ -11,7 +11,7 @@ function CameraScreen() {
         camera.takeSnapshot();
       }}
     >
-      Take Picture
+      Capture Picture
     </button>
   );
 }
