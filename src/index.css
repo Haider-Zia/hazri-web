@@ -1,13 +1,67 @@
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: local("Montserrat-SemiBold"),
+    url(./resources/fonts/Montserrat-SemiBold.ttf) format("truetype");
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat-SemiBold";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e0e0e0ff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Montserrat-SemiBold";
+}
+
+.Header {
+  display: grid;
+  background-color: #20b356ff;
+  align-items: center;
+  justify-items: center;
+}
+
+.Dashboard {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  min-height: 72.5vh;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #e0e0e0ff;
+}
+
+.NeumorphicButton {
+  padding: 1.5em 5em;
+  background: #e0e0e0ff;
+  height: 250px;
+  width: 250px;
+  border: none;
+  border-radius: .5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 1000;
+  letter-spacing: .1rem;
+  text-align: center;
+  color: #20b356ff;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+.NeumorphicButton:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+.NeumorphicButton:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
 }
